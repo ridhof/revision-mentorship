@@ -6,7 +6,7 @@ const defaultMeta = {
   siteName: 'Revision-Style Mentorship',
   description: 'A template for revision-style mentorship by Theodorus Clarence',
   /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
-  url: 'https://revision-mentorship.thcl.dev',
+  url: 'https://revision-mentorship.fbrns.my.id',
   type: 'website',
   robots: 'follow, index',
   /**
