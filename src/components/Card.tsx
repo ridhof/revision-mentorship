@@ -1,12 +1,13 @@
 import BorderedTextButton from '@/components/buttons/BorderedTextButton';
 
 type CardProps = {
+  id: number;
   title: string;
   price: number;
   description: string | null;
 };
 
-export default function Card({ title, price, description }: CardProps) {
+export default function Card({ id, title, price, description }: CardProps) {
   return (
     <div className='grid grid-rows-1 rounded border border-black p-4 text-left'>
       <div>
@@ -19,9 +20,9 @@ export default function Card({ title, price, description }: CardProps) {
         </p>
       </div>
       <div className='mt-4 grid grid-cols-3 gap-x-4 text-sm'>
-        <BorderedTextButton text='View' />
-        <BorderedTextButton text='Update' />
-        <BorderedTextButton text='Delete' />
+        <BorderedTextButton path={`/p/${id}`} text='View' />
+        <BorderedTextButton path='#' text='Edit' />
+        <BorderedTextButton path='#' text='Delete' />
       </div>
     </div>
   );

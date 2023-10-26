@@ -1,11 +1,18 @@
 type BorderedTextButtonProps = {
+  path: string;
   text: string;
 };
 
-export default function BorderedTextButton({ text }: BorderedTextButtonProps) {
+export default function BorderedTextButton({
+  path,
+  text,
+}: BorderedTextButtonProps) {
   return (
-    <button className='rounded border border-black py-1 hover:border-gray-500 hover:text-gray-500'>
+    <a
+      href={path}
+      className='rounded border border-black py-1 text-center hover:border-gray-500 hover:text-gray-500'
+    >
       {text}
-    </button>
+    </a>
   );
 }

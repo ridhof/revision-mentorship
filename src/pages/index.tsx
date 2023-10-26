@@ -20,8 +20,14 @@ export default function HomePage() {
               Buy your favorite items anytime and anywhere
             </p>
             <div className='mt-8 grid w-full grid-cols-1 gap-4 px-12 sm:grid-cols-2 sm:px-0 md:grid-cols-3 lg:grid-cols-4'>
-              <Card title={loremText} price={29500} description={loremText} />
               <Card
+                id={1}
+                title={loremText}
+                price={29500}
+                description={loremText}
+              />
+              <Card
+                id={2}
                 title='Shampoo'
                 price={42950}
                 description='A shampoo to help cleanse your hair'
