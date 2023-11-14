@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import * as React from 'react';
 
 import Card from '@/components/Card';
@@ -19,6 +20,12 @@ export default function HomePage() {
             <p className='mt-2 text-gray-500'>
               Buy your favorite items anytime and anywhere
             </p>
+            <Link
+              href='/add'
+              className='text-sm text-gray-500 underline hover:text-black'
+            >
+              Add New Item
+            </Link>
             <div className='mt-8 grid w-full grid-cols-1 gap-4 px-12 sm:grid-cols-2 sm:px-0 md:grid-cols-3 lg:grid-cols-4'>
               <Card
                 id={1}
